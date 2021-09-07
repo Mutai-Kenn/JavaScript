@@ -1,0 +1,86 @@
+// General Style
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(245, 238, 238);
+
+  .container {
+    display: grid;
+    justify-content: stretch;
+    width: 80vw;
+    margin: auto;
+
+    .coordinates {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 2em;
+      .lat {
+        width: 200px;
+        padding: 0.4em 0.6em;
+        span {
+          font-weight: bold;
+          padding: 1em;
+        }
+      }
+      .lon {
+        width: 200px;
+        padding: 0.4em 0.6em;
+        span {
+          font-weight: bold;
+        }
+      }
+      .btn {
+        width: 300px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 0.2em;
+        #btnGet {
+          border-radius: 2px;
+          padding: 0.4em 0.6em;
+          font-size: 1em;
+          border: 1px solid black;
+          cursor: pointer;
+        }
+        #btnCurrent {
+          border-radius: 2px;
+          padding: 0.4em 0.6em;
+          font-size: 1em;
+          border: 1px solid black;
+          cursor: pointer;
+        }
+      }
+    }
+    .weather {
+      .row {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .card {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          width: 400px;
+          box-shadow: 0 4px 8px 0 rgba($color: #000000, $alpha: 1);
+          align-items: center;
+          font-size: larger;
+          border-radius: 4px;
+
+          .date {
+            font-weight: bolder;
+            margin-top: 1em;
+          }
+
+          .condition {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

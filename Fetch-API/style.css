@@ -1,0 +1,119 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #f5eeee;
+}
+
+body .container {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  width: 80vw;
+  margin: auto;
+}
+
+body .container .coordinates {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 2em;
+}
+
+body .container .coordinates .lat {
+  width: 200px;
+  padding: 0.4em 0.6em;
+}
+
+body .container .coordinates .lat span {
+  font-weight: bold;
+  padding: 1em;
+}
+
+body .container .coordinates .lon {
+  width: 200px;
+  padding: 0.4em 0.6em;
+}
+
+body .container .coordinates .lon span {
+  font-weight: bold;
+}
+
+body .container .coordinates .btn {
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 0.2em;
+}
+
+body .container .coordinates .btn #btnGet {
+  border-radius: 2px;
+  padding: 0.4em 0.6em;
+  font-size: 1em;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+body .container .coordinates .btn #btnCurrent {
+  border-radius: 2px;
+  padding: 0.4em 0.6em;
+  font-size: 1em;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+body .container .weather .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .container .weather .row .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 400px;
+  -webkit-box-shadow: 0 4px 8px 0 black;
+          box-shadow: 0 4px 8px 0 black;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: larger;
+  border-radius: 4px;
+}
+
+body .container .weather .row .card .date {
+  font-weight: bolder;
+  margin-top: 1em;
+}
+
+body .container .weather .row .card .condition {
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */
