@@ -15,7 +15,7 @@ const app = {
  fetchWeather: (ev) =>{
      let lat = document.getElementById('latitude').value;
      let lon = document.getElementById('longitude').value;
-     let key= 'API KEY';
+     let key= YOUR_API_KEY;
      let lang= 'en';
      let units = 'metric';
      let url = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude={part}&appid=${key}&units=${units}&lang=${lang}`;
